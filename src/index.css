@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 20% 98%;
+    --foreground: 215 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+
+    --primary: 215 60% 22%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 15% 93%;
+    --secondary-foreground: 215 25% 15%;
+
+    --muted: 210 15% 95%;
+    --muted-foreground: 215 10% 45%;
+
+    --accent: 24 85% 52%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214 20% 88%;
+    --input: 214 20% 88%;
+    --ring: 215 60% 22%;
+
+    --radius: 0.375rem;
+
+    --sidebar-background: 215 60% 22%;
+    --sidebar-foreground: 210 20% 95%;
+    --sidebar-primary: 24 85% 52%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 215 50% 30%;
+    --sidebar-accent-foreground: 210 20% 95%;
+    --sidebar-border: 215 40% 30%;
+    --sidebar-ring: 24 85% 52%;
+
+    /* Custom tokens */
+    --navy: 215 60% 22%;
+    --navy-light: 215 40% 30%;
+    --navy-dark: 215 65% 14%;
+    --orange: 24 85% 52%;
+    --orange-light: 24 80% 60%;
+    --orange-dark: 24 90% 42%;
+    --steel: 210 10% 58%;
+    --steel-light: 210 15% 85%;
+    --surface: 210 20% 97%;
+  }
+
+  .dark {
+    --background: 215 65% 8%;
+    --foreground: 210 20% 95%;
+    --card: 215 60% 12%;
+    --card-foreground: 210 20% 95%;
+    --popover: 215 60% 12%;
+    --popover-foreground: 210 20% 95%;
+    --primary: 24 85% 52%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 215 40% 18%;
+    --secondary-foreground: 210 20% 95%;
+    --muted: 215 40% 18%;
+    --muted-foreground: 215 15% 55%;
+    --accent: 24 85% 52%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 215 30% 22%;
+    --input: 215 30% 22%;
+    --ring: 24 85% 52%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Animation keyframes */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.6s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out forwards;
+}
