@@ -21,8 +21,14 @@ const Products = () => (
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {products.map((p) => (
           <div key={p.slug} className="bg-card rounded-lg border border-border overflow-hidden group hover:shadow-lg transition-shadow">
-            <div className="aspect-[4/3] bg-muted overflow-hidden">
-              <img src={p.image} alt={p.name} loading="lazy" width={800} height={800} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+            <div className="aspect-[4/3] bg-muted overflow-hidden flex items-center justify-center">
+              <img
+                src={p.image}
+                alt={p.name}
+                loading="lazy"
+                style={{ maxWidth: '70%', maxHeight: '70%' }}
+                className="object-contain group-hover:scale-105 transition-transform duration-500"
+              />
             </div>
             <div className="p-6">
               <h3 className="text-xl font-semibold text-foreground mb-2">{p.name}</h3>

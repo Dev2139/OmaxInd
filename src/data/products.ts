@@ -1,42 +1,158 @@
-import productDryer from "@/assets/product-dryer.jpg";
-import productHopper from "@/assets/product-hopper.jpg";
-import productConveying from "@/assets/product-conveying.jpg";
-import productTempController from "@/assets/product-tempcontroller.jpg";
 import productChiller from "@/assets/product-chiller.jpg";
+import productTempController from "@/assets/product-tempcontroller.jpg";
+import productConveying from "@/assets/product-conveying.jpg";
+import productHopper from "@/assets/product-hopper.jpg";
+import productDryer from "@/assets/product-dryer.jpg";
+import waterCooledAirChillerImg from "@/assets/water-cooled-air-chiller-img";
 
-export interface ModelSpec {
-  headers: string[];
-  rows: string[][];
-}
-
-export interface Product {
-  slug: string;
-  name: string;
-  tagline: string;
-  image: string;
-  benefits: string[];
-  overview: string;
-  features: string[];
-  specifications: { label: string; value: string }[];
-  applications: string[];
-  modelSpecs?: ModelSpec;
-}
-
+import industrialChillerImg from "@/assets/industrial-chiller-img";
+import stainlessSteelWaterChillerImg from "@/assets/stainless-steel-water-chiller-img";
 export const products: Product[] = [
+  // ...existing products...
+  {
+    slug: "stainless-steel-water-chiller",
+    name: "Stainless Steel Water Chillers",
+    tagline: "Hygienic, corrosion-free cooling for critical applications",
+    image: stainlessSteelWaterChillerImg,
+    benefits: [
+      "All wetted parts in stainless steel for hygiene and durability",
+      "Corrosion-free operation for long service life",
+      "High-efficiency cooling for demanding applications",
+      "Easy to clean and maintain",
+    ],
+    overview:
+      "Stainless Steel Water Chillers are engineered for industries where hygiene, corrosion resistance, and reliability are critical. With all wetted parts made from high-grade stainless steel, these chillers are ideal for food, beverage, pharmaceutical, and chemical applications, ensuring pure and uncontaminated cooling water.",
+    features: [
+      "All wetted parts in stainless steel",
+      "Hermetically sealed scroll or reciprocating compressors",
+      "Digital temperature control for precise cooling",
+      "Double-walled insulated water tanks",
+      "Low-maintenance, easy-to-clean design",
+      "Integrated safety and alarm systems",
+    ],
+    specifications: [
+      { label: "Cooling Capacity", value: "3 TR – 60 TR" },
+      { label: "Temperature Range", value: "5°C – 25°C" },
+      { label: "Reservoir Capacity", value: "50 – 600 Litres" },
+      { label: "Compressor Type", value: "Scroll/Reciprocating" },
+      { label: "Power Supply", value: "3 Phase, 415V, 50Hz" },
+      { label: "Control System", value: "Digital microprocessor based" },
+    ],
+    modelSpecs: {
+      headers: ["Model", "Cooling Capacity (TR)", "Reservoir (L)", "Compressor Type", "Power (kW)", "Dimensions (mm)", "Weight (Kg)"],
+      rows: [
+        ["SSWC-3", "3", "50", "Scroll", "2.8", "900x600x1000", "120"],
+        ["SSWC-10", "10", "200", "Scroll", "7.2", "1300x800x1200", "300"],
+        ["SSWC-20", "20", "400", "Reciprocating", "13.0", "1700x1000x1400", "520"],
+        ["SSWC-40", "40", "600", "Reciprocating", "21.0", "2100x1200x1600", "900"],
+      ],
+    },
+    applications: [
+      "Food and beverage process cooling",
+      "Pharmaceutical and chemical industries",
+      "Medical and laboratory equipment cooling",
+      "Plastic molding and extrusion",
+      "Any application requiring pure, corrosion-free water",
+    ],
+  },
+  {
+    slug: "industrial-water-chiller",
+    name: "Industrial Water Chiller",
+    tagline: "Efficient process cooling for industrial applications",
+    image: industrialChillerImg,
+    benefits: [
+      "High-efficiency cooling for continuous operation",
+      "Robust construction for industrial environments",
+      "Precise temperature control for process stability",
+      "Energy-efficient and low maintenance design",
+    ],
+    overview:
+      "The Industrial Water Chiller is engineered to deliver reliable and efficient cooling for a wide range of industrial processes. Designed for demanding environments, it ensures stable operation, protects equipment, and improves product quality by maintaining optimal process temperatures.",
+    features: [
+      "Advanced refrigeration system for rapid cooling",
+      "Corrosion-resistant components for long service life",
+      "User-friendly digital controls and monitoring",
+      "Integrated safety features for fault protection",
+      "Low noise and vibration operation",
+      "Easy installation and minimal maintenance requirements",
+    ],
+    specifications: [
+      { label: "Cooling Capacity", value: "Customizable (5 TR – 100+ TR)" },
+      { label: "Temperature Range", value: "5°C – 30°C" },
+      { label: "Reservoir Capacity", value: "100 – 1000 Litres" },
+      { label: "Compressor Type", value: "Hermetically sealed scroll/reciprocating" },
+      { label: "Power Supply", value: "3 Phase, 415V, 50Hz" },
+      { label: "Control System", value: "Digital microprocessor based" },
+    ],
+    modelSpecs: {
+      headers: ["Model", "Cooling Capacity (TR)", "Reservoir (L)", "Compressor Type", "Power (kW)", "Dimensions (mm)", "Weight (Kg)"],
+      rows: [
+        ["IWC-5", "5", "100", "Scroll", "4.5", "1200x800x1200", "250"],
+        ["IWC-10", "10", "200", "Scroll", "7.5", "1400x900x1300", "350"],
+        ["IWC-20", "20", "400", "Scroll", "13.5", "1800x1100x1500", "600"],
+        ["IWC-30", "30", "600", "Reciprocating", "18.5", "2200x1300x1700", "900"],
+      ],
+    },
+    applications: [
+      "Plastic processing machine cooling",
+      "Hydraulic oil temperature control",
+      "Chemical and pharmaceutical process cooling",
+      "Food and beverage industry cooling",
+      "Laser and medical equipment cooling",
+    ],
+  },
+  {
+    slug: "water-cooled-air-chiller",
+    name: "Water Cooled Air Chiller",
+    tagline: "Dual-stage cooling for maximum efficiency and reliability",
+    image: waterCooledAirChillerImg,
+    benefits: [
+      "Combines water and air cooling for superior performance",
+      "Stable temperature control for sensitive processes",
+      "Energy-saving operation with advanced components",
+      "Low noise and vibration for quiet environments",
+    ],
+    overview:
+      "The Water Cooled Air Chiller is designed for applications requiring both high cooling efficiency and reliability. By utilizing a dual-stage cooling system—water for primary heat removal and air for secondary dissipation—it ensures optimal temperature control for industrial and commercial processes, even in demanding conditions.",
+    features: [
+      "Dual-stage cooling: water-cooled condenser and air-cooled evaporator",
+      "Digital temperature controller for precise adjustment",
+      "Corrosion-resistant heat exchangers",
+      "Automatic safety shutdown and alarms",
+      "Easy-to-clean filters and accessible components",
+      "Compact design for flexible installation",
+    ],
+    specifications: [
+      { label: "Cooling Capacity", value: "5 TR – 80 TR" },
+      { label: "Temperature Range", value: "7°C – 25°C" },
+      { label: "Reservoir Capacity", value: "80 – 800 Litres" },
+      { label: "Compressor Type", value: "Scroll/Reciprocating" },
+      { label: "Power Supply", value: "3 Phase, 415V, 50Hz" },
+      { label: "Control System", value: "Digital microprocessor based" },
+    ],
+    modelSpecs: {
+      headers: ["Model", "Cooling Capacity (TR)", "Reservoir (L)", "Compressor Type", "Power (kW)", "Dimensions (mm)", "Weight (Kg)"],
+      rows: [
+        ["WCAC-5", "5", "80", "Scroll", "4.2", "1100x700x1100", "210"],
+        ["WCAC-10", "10", "160", "Scroll", "7.8", "1300x850x1200", "320"],
+        ["WCAC-20", "20", "320", "Scroll", "13.2", "1700x1000x1400", "540"],
+        ["WCAC-40", "40", "600", "Reciprocating", "22.0", "2100x1200x1600", "950"],
+      ],
+    },
+    applications: [
+      "Plastic molding and extrusion cooling",
+      "Chemical and pharmaceutical process cooling",
+      "HVAC and building climate control",
+      "Food and beverage process cooling",
+      "Laser and electronics equipment cooling",
+    ],
+  },
   {
     slug: "hot-air-dryer",
     name: "Hot Air Dryer",
     tagline: "Uniform drying for consistent material quality up to 180°C",
     image: productDryer,
     benefits: [
-      "Uniform air and heat distribution",
-      "Quick-clean design with swivel cylinder",
-      "Insulated heating chamber prevents heat loss",
-      "Inbuilt magnet protects from ferrous material",
-    ],
-    overview:
-      "Omax Hot Air Dryers (OHD & OMHD Series) deliver reliable moisture removal from plastic granules before processing. Built with aluminium casting cone, MS cone, and stainless steel cylinder, they feature low watt density heaters for longer life and high pressure centrifugal blowers with adjustable dampers for precise air flow control.",
-    features: [
       "Uniform air / heat distribution",
       "Quick-clean design due to swivel able cylinder",
       "Suitable for high drying temperature up to 180°C",
