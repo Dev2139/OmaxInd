@@ -39,7 +39,7 @@ const Contact = () => {
               <ul className="space-y-4">
                 <li className="flex items-start gap-3 text-sm text-muted-foreground">
                   <MapPin className="w-5 h-5 text-accent shrink-0 mt-0.5" />
-                  <span>36, Victoriya Industrial Park, B/h. Kathwada G.I.D.C., Road No.-5, Kathwada, Ahmedabad-382430</span>
+                  <span>10, Harikrupa Industrial Park-2, Nr. Kotak Mahindra Bank, Road No.5, Kathawada G.I.D.C., Kathawada, Ahmedabad-382430</span>
                 </li>
                 <li className="flex items-center gap-3 text-sm text-muted-foreground">
                   <Phone className="w-5 h-5 text-accent shrink-0" />
@@ -47,7 +47,7 @@ const Contact = () => {
                 </li>
                 <li className="flex items-center gap-3 text-sm text-muted-foreground">
                   <Mail className="w-5 h-5 text-accent shrink-0" />
-                  contact@omaxind.com
+                  omaxind123@gmail.com
                 </li>
                 <li className="flex items-center gap-3 text-sm text-muted-foreground">
                   <Globe className="w-5 h-5 text-accent shrink-0" />

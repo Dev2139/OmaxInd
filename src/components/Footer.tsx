@@ -50,7 +50,7 @@ const Footer = () => (
           <ul className="space-y-3 text-sm text-primary-foreground/70">
             <li className="flex items-start gap-2">
               <MapPin className="w-4 h-4 mt-0.5 shrink-0" />
-              36, Victoriya Industrial Park, B/h. Kathwada G.I.D.C., Road No.-5, Kathwada, Ahmedabad-382430
+              10, Harikrupa Industrial Park-2, Nr. Kotak Mahindra Bank, Road No.5, Kathawada G.I.D.C., Kathawada, Ahmedabad-382430
             </li>
             <li className="flex items-center gap-2">
               <Phone className="w-4 h-4 shrink-0" />
@@ -58,7 +58,7 @@ const Footer = () => (
             </li>
             <li className="flex items-center gap-2">
               <Mail className="w-4 h-4 shrink-0" />
-              contact@omaxind.com
+              omaxind123@gmail.com
             </li>
             <li className="flex items-center gap-2">
               <Globe className="w-4 h-4 shrink-0" />

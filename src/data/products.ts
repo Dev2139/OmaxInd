@@ -6,13 +6,14 @@ import productDryer from "@/assets/product-dryer.jpg";
 
 // Water Cooled Chillers image from Cloudinary
 const waterCooledChillersImg = "https://res.cloudinary.com/dsddldquo/image/upload/q_auto/f_auto/v1775812327/krusgarrtrarfcs3ju9b.png";
-const industrialWaterChillerNewImg = "https://res.cloudinary.com/dsddldquo/image/upload/q_auto/f_auto/v1775813126/f5jvdovcf8ddv0ugf9qb.png";
+const industrialWaterChillerNewImg = "https://res.cloudinary.com/dsddldquo/image/upload/v1776355916/l4pqgmdkwo5wi4ov7tc7.png";
 const waterChiller1TRImg = "https://res.cloudinary.com/dsddldquo/image/upload/q_auto/f_auto/v1775813413/pkutvexbhsai2htnjkop.png";
 const cncSpindleWaterChillerImg = "https://res.cloudinary.com/dsddldquo/image/upload/q_auto/f_auto/v1775813723/d1vn3i1pg2ysqebmk31t.png";
 const roWaterChiller3TRImg = "https://res.cloudinary.com/dsddldquo/image/upload/q_auto/f_auto/v1775813962/yp0qbppaxmqyznriogz9.png";
 const mouldTemperatureControllerNewImg = "https://res.cloudinary.com/dsddldquo/image/upload/q_auto/f_auto/v1775814293/utwjmczdzd8dmr9tyspy.png";
 const heatPumpWaterHeaterImg = "https://res.cloudinary.com/dsddldquo/image/upload/q_auto/f_auto/v1775814609/czya2eeqze7q9zta5hf0.png";
 const commercialWaterHeatPumpImg = "https://res.cloudinary.com/dsddldquo/image/upload/q_auto/f_auto/v1775814920/ovgbxdih8cxhkhflryac.png";
+const labChillerImg = "https://res.cloudinary.com/dsddldquo/image/upload/v1776356140/gqvrpre6yqxcqvsuelsc.jpg";
 import waterCooledAirChillerImg from "@/assets/water-cooled-air-chiller-img";
 
 import industrialChillerImg from "@/assets/industrial-chiller-img";
@@ -542,4 +543,53 @@ export const products: Product[] = [
     ],
   },
   // --- End Commercial Water Heat Pump (new eleventh product) ---
+
+  // --- Lab Chiller (new twelfth product) ---
+  {
+    slug: "lab-chiller",
+    name: "Lab Chiller",
+    tagline: "Precision cooling engineered for laboratory and research environments",
+    image: labChillerImg,
+    benefits: [
+      "Ultra-precise temperature stability for sensitive experiments",
+      "Compact and quiet design ideal for lab environments",
+      "Corrosion-resistant wetted parts for chemical compatibility",
+      "Easy-to-use digital controls with programmable setpoints",
+    ],
+    overview:
+      "The Lab Chiller is a high-precision cooling system engineered specifically for laboratory, research, and analytical applications. Delivering stable and accurate temperature control, it cools instruments, reactors, analytical equipment, and samples with minimal fluctuation — ensuring repeatable, reliable results in your most critical experiments.",
+    features: [
+      "PID microprocessor controller with ±0.1°C temperature accuracy",
+      "Stainless steel or chemical-resistant wetted parts",
+      "Low-noise hermetic compressor for quiet lab operation",
+      "Compact benchtop or floor-standing cabinet design",
+      "Integrated reservoir with circulation pump",
+      "Multiple safety alarms: over-temperature, low flow, low level",
+    ],
+    specifications: [
+      { label: "Cooling Capacity", value: "0.3 kW – 5 kW" },
+      { label: "Temperature Range", value: "-20°C – +40°C" },
+      { label: "Temperature Stability", value: "±0.1°C" },
+      { label: "Reservoir Capacity", value: "4 – 30 Litres" },
+      { label: "Power Supply", value: "Single / 3 Phase, 220–415V, 50Hz" },
+      { label: "Refrigerant", value: "R-404A / R-410A (eco-friendly)" },
+    ],
+    modelSpecs: {
+      headers: ["Model", "Cooling Capacity (kW)", "Temp Range (°C)", "Reservoir (L)", "Pump Flow (L/min)", "Dimensions (mm)", "Weight (Kg)"],
+      rows: [
+        ["LC-300", "0.3", "-10 to +40", "4", "6", "380x280x580", "28"],
+        ["LC-800", "0.8", "-20 to +40", "8", "12", "480x330x650", "42"],
+        ["LC-2000", "2.0", "-20 to +40", "15", "20", "600x420x850", "75"],
+        ["LC-5000", "5.0", "-20 to +40", "30", "30", "750x500x1050", "120"],
+      ],
+    },
+    applications: [
+      "Chemical and biochemical reaction cooling",
+      "Analytical instrumentation (HPLC, spectroscopy)",
+      "Rotary evaporators and condensers",
+      "Medical and clinical diagnostic equipment",
+      "Semiconductor and electronics testing",
+    ],
+  },
+  // --- End Lab Chiller (new twelfth product) ---
 ];

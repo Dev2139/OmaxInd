@@ -26,7 +26,7 @@ const Header = () => {
               <Phone className="w-3.5 h-3.5" />
               +91 9662512628
             </span>
-            <span className="hidden sm:inline">contact@omaxind.com</span>
+            <span className="hidden sm:inline">omaxind123@gmail.com</span>
           </div>
           <span className="hidden md:inline">www.omaxind.com</span>
         </div>
