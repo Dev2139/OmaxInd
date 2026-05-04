@@ -8,9 +8,11 @@ const Footer = () => (
         {/* Company */}
         <div>
           <div className="flex items-center gap-2 mb-4">
-            <div className="w-8 h-8 bg-accent rounded flex items-center justify-center">
-              <span className="text-accent-foreground font-bold text-sm">OI</span>
-            </div>
+            <img 
+              src="https://res.cloudinary.com/dsddldquo/image/upload/v1777916054/nzyzdizrpbbrkhldn1br.png" 
+              alt="Omax Industries Logo" 
+              className="w-8 h-8 object-contain brightness-0 invert"
+            />
             <span className="font-bold text-lg">Omax Industries</span>
           </div>
           <p className="text-primary-foreground/70 text-sm leading-relaxed">

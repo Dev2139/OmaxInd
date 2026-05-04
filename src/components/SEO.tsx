@@ -13,7 +13,7 @@ const SEO = ({
   title = "Omax Industries | Industrial Chiller & Thermal Regulation Solutions",
   description = "Omax Industries is a premier manufacturer of industrial water chillers, CNC spindle chillers, and precision thermal regulation systems in Ahmedabad, India.",
   keywords = "industrial chiller, water cooled chiller, air cooled chiller, mould temperature controller, heat pump, Omax Industries, Ahmedabad, cooling solutions",
-  image = "https://res.cloudinary.com/dsddldquo/image/upload/v1777913590/bbnfhfsjtdnkauczpemk.png",
+  image = "https://res.cloudinary.com/dsddldquo/image/upload/v1777916054/nzyzdizrpbbrkhldn1br.png",
   url = "https://www.omaxind.com",
   type = "website",
 }: SEOProps) => {
@@ -48,7 +48,7 @@ const SEO = ({
           "@type": "Organization",
           "name": "Omax Industries",
           "url": "https://www.omaxind.com",
-          "logo": "https://www.omaxind.com/favicon.svg",
+          "logo": "https://res.cloudinary.com/dsddldquo/image/upload/v1777916054/nzyzdizrpbbrkhldn1br.png",
           "contactPoint": {
             "@type": "ContactPoint",
             "telephone": "+91-9662512628",

@@ -35,9 +35,11 @@ const Header = () => {
       {/* Main nav */}
       <div className="container flex items-center justify-between h-16">
         <Link to="/" className="flex items-center gap-2">
-          <div className="w-8 h-8 bg-accent rounded flex items-center justify-center">
-            <span className="text-accent-foreground font-bold text-sm">OI</span>
-          </div>
+          <img 
+            src="https://res.cloudinary.com/dsddldquo/image/upload/v1777916054/nzyzdizrpbbrkhldn1br.png" 
+            alt="Omax Industries Logo" 
+            className="w-10 h-10 object-contain"
+          />
           <div className="leading-tight">
             <span className="font-bold text-foreground text-lg tracking-tight">Omax</span>
             <span className="block text-[10px] text-muted-foreground tracking-widest uppercase">Industries</span>
