@@ -6,6 +6,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Phone, Mail, MapPin, CheckCircle2, Globe } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import SEO from "@/components/SEO";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -20,6 +21,12 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
+      <SEO 
+        title="Contact Omax Industries | Request a Quote"
+        description="Get in touch with Omax Industries for custom industrial cooling solutions. Located in Kathawada GIDC, Ahmedabad. Contact us for quotes and technical support."
+        keywords="contact Omax Industries, industrial chiller quote, Ahmedabad cooling solution provider, Kathawada GIDC manufacturers"
+        url="https://www.omaxind.com/contact"
+      />
       <section className="bg-primary text-primary-foreground py-16">
         <div className="container">
           <p className="text-accent font-semibold text-sm uppercase tracking-widest mb-3">Get in Touch</p>

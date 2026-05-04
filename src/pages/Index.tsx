@@ -16,7 +16,9 @@ import {
   Cpu,
   Leaf,
   Headphones,
+  Download,
 } from "lucide-react";
+import SEO from "@/components/SEO";
 
 const stats = [
   { value: "15+", label: "Years Experience" },
@@ -43,6 +45,11 @@ const industries = [
 const Index = () => (
   <div className="min-h-screen bg-background">
     <Header />
+    <SEO 
+      title="Omax Industries | Industrial Chiller & Thermal Solutions Ahmedabad"
+      description="Omax Industries is India's leading manufacturer of high-efficiency industrial water chillers, CNC spindle chillers, and precision thermal regulation systems. Based in Ahmedabad."
+      keywords="industrial chiller manufacturer, water cooled chiller India, CNC spindle chiller, mould temperature controller, industrial cooling systems Ahmedabad"
+    />
 
     {/* Hero */}
     <section className="relative min-h-[600px] flex items-center">
@@ -54,14 +61,19 @@ const Index = () => (
         <div className="max-w-2xl">
           <p className="text-accent font-semibold text-sm uppercase tracking-widest mb-4">Industrial Solutions Provider</p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6">
-            Advanced Auxiliary Systems for Plastic Processing
+            Industrial Chiller & Thermal Regulation Solutions
           </h1>
           <p className="text-primary-foreground/80 text-lg mb-8 leading-relaxed">
-            Engineered for efficiency, precision, and long-term reliability. Complete auxiliary solutions from material handling to cooling.
+            Precision-engineered cooling systems and thermal management for diverse industrial applications. Built for efficiency, reliability, and long-term performance.
           </p>
           <div className="flex flex-wrap gap-4">
             <Button variant="hero" asChild>
               <Link to="/products">View Products <ArrowRight className="w-4 h-4 ml-1" /></Link>
+            </Button>
+            <Button variant="hero-outline" className="bg-accent text-accent-foreground border-accent hover:bg-accent/90" asChild>
+              <a href="https://drive.google.com/file/d/17_B7YFER8bXV4A7-JdoT124l8I-gu6P2/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                Download Catalog <Download className="w-4 h-4 ml-2" />
+              </a>
             </Button>
             <Button variant="hero-outline" asChild>
               <Link to="/contact">Request Quote</Link>
@@ -93,7 +105,7 @@ const Index = () => (
           Omax Industries – Engineering Excellence
         </h2>
         <p className="text-muted-foreground text-lg leading-relaxed">
-          Omax Industries is a distinguished manufacturer of a wide range of auxiliary equipment for plastic moulding machinery. Based in Ahmedabad, India, we design and build hot air dryers, hopper loaders, central conveying systems, mould temperature controllers, and water chillers — engineered for precision, built for reliability.
+          Omax Industries is a premier manufacturer specializing in industrial water chillers and precision thermal regulation systems. Based in Ahmedabad, India, we design and build a comprehensive range of cooling solutions including industrial chillers, SS water chillers, and mould temperature controllers — engineered for precision and built for reliability.
         </p>
       </div>
     </section>
@@ -104,7 +116,7 @@ const Index = () => (
         <div className="text-center mb-14">
           <p className="text-accent font-semibold text-sm uppercase tracking-widest mb-3">Our Products</p>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-            Complete Auxiliary Equipment Range
+            Industrial Cooling & Thermal Range
           </h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -142,15 +154,15 @@ const Index = () => (
           Complete Process Integration
         </h2>
         <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-          Our products work together as a seamless system — from raw material handling to final process cooling.
+          Our products work together as a seamless thermal management system — ensuring optimal temperatures for your industrial processes.
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
         {[
-          { step: "01", title: "Material Handling", desc: "Hopper loaders automate material feeding from storage to machines" },
-          { step: "02", title: "Drying", desc: "Hot air dryers remove moisture for consistent material quality" },
-          { step: "03", title: "Conveying", desc: "Central systems distribute material across the production floor" },
-          { step: "04", title: "Cooling", desc: "Chillers and temperature controllers regulate process heat" },
+          { step: "01", title: "Heat Absorption", desc: "Process heat is absorbed by the circulated chilled water" },
+          { step: "02", title: "Refrigeration", desc: "Energy-efficient compressors transfer heat to the refrigerant" },
+          { step: "03", title: "Heat Rejection", desc: "Waste heat is dissipated through air or water condensers" },
+          { step: "04", title: "Thermal Control", desc: "Precision PID controllers maintain the exact setpoint" },
         ].map((s, i) => (
           <div key={s.step} className="relative">
             <div className="bg-card border border-border rounded-lg p-6 h-full">
@@ -175,13 +187,37 @@ const Index = () => (
           <p className="text-accent font-semibold text-sm uppercase tracking-widest mb-3">Industries</p>
           <h2 className="text-3xl md:text-4xl font-bold">Industries We Serve</h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
           {industries.map((ind) => (
             <div key={ind.name} className="text-center p-8 border border-primary-foreground/10 rounded-lg">
               <ind.icon className="w-10 h-10 text-accent mx-auto mb-4" />
               <h3 className="font-semibold text-lg">{ind.name}</h3>
             </div>
           ))}
+          <div className="text-center p-8 border border-primary-foreground/10 rounded-lg">
+            <Globe className="w-10 h-10 text-accent mx-auto mb-4" />
+            <h3 className="font-semibold text-lg">Pharma & Chemical</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* Chiller Working Principle Section */}
+    <section className="bg-background">
+      <div className="container py-20">
+        <div className="text-center mb-14">
+          <p className="text-accent font-semibold text-sm uppercase tracking-widest mb-3">Technical Architecture</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">Chiller Working Principle</h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            Our chillers are engineered with a sophisticated dual-circuit system. This technical diagram illustrates the precise integration of the cooling agent circuit and the cold water circuit, ensuring maximum heat exchange efficiency and stable temperature control.
+          </p>
+        </div>
+        <div className="rounded-2xl overflow-hidden border border-border shadow-2xl bg-white p-4 md:p-8">
+          <img 
+            src="https://res.cloudinary.com/dsddldquo/image/upload/v1777913590/bbnfhfsjtdnkauczpemk.png" 
+            alt="Chiller Working Principle Diagram" 
+            className="w-full h-auto rounded-lg"
+          />
         </div>
       </div>
     </section>

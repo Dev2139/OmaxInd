@@ -65,6 +65,7 @@ export const products: Product[] = [
       "Plastic molding and extrusion",
       "Any application requiring pure, corrosion-free water",
     ],
+    keywords: "stainless steel water chiller, hygienic chiller, food grade chiller, pharma cooling system, corrosion resistant chiller",
   },
   {
     slug: "industrial-water-chiller",
@@ -111,6 +112,7 @@ export const products: Product[] = [
       "Food and beverage industry cooling",
       "Laser and medical equipment cooling",
     ],
+    keywords: "industrial water chiller, process cooling, heavy duty chiller, injection molding cooling, Ahmedabad chiller manufacturer",
   },
   {
     slug: "water-cooled-air-chiller",
@@ -443,6 +445,7 @@ export const products: Product[] = [
       "Chemical reaction vessels",
       "Blow moulding operations",
     ],
+    keywords: "mould temperature controller, MTC unit, plastic injection moulding cooling, industrial temperature controller Ahmedabad",
   },
   // --- End Mould Temperature Controller (new ninth product) ---
 

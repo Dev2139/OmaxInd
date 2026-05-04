@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { products } from "@/data/products";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
+import SEO from "@/components/SEO";
 
 const ProductDetail = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -25,6 +26,14 @@ const ProductDetail = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
+      <SEO 
+        title={`${product.name} | Industrial Thermal Solutions`}
+        description={product.overview}
+        keywords={`${product.name}, ${product.slug.replace(/-/g, ' ')}, industrial cooling solution, Omax Industries`}
+        image={product.image}
+        url={`https://www.omaxind.com/products/${product.slug}`}
+        type="product"
+      />
 
       {/* Breadcrumb */}
       <div className="bg-muted border-b border-border">

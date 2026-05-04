@@ -4,16 +4,22 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { products } from "@/data/products";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
+import SEO from "@/components/SEO";
 
 const Products = () => (
   <div className="min-h-screen bg-background">
     <Header />
+    <SEO 
+      title="Industrial Chiller Range | Omax Industries Ahmedabad"
+      description="Explore our range of industrial water chillers, CNC spindle chillers, and laboratory cooling solutions. Engineered for efficiency and reliability."
+      keywords="industrial water chiller range, SS water chiller, CNC spindle chiller products, laboratory chillers Ahmedabad"
+    />
     <section className="bg-primary text-primary-foreground py-16">
       <div className="container">
         <p className="text-accent font-semibold text-sm uppercase tracking-widest mb-3">Our Range</p>
-        <h1 className="text-3xl md:text-4xl font-bold">Auxiliary Equipment for Plastic Processing</h1>
+        <h1 className="text-3xl md:text-4xl font-bold">Industrial Chiller & Thermal Solutions</h1>
         <p className="text-primary-foreground/70 mt-4 max-w-2xl">
-          Comprehensive range of dryers, loaders, conveying systems, temperature controllers, and chillers designed for industrial reliability.
+          Comprehensive range of water chillers, CNC spindle chillers, and precision temperature controllers designed for industrial reliability.
         </p>
       </div>
     </section>

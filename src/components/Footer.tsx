@@ -14,8 +14,8 @@ const Footer = () => (
             <span className="font-bold text-lg">Omax Industries</span>
           </div>
           <p className="text-primary-foreground/70 text-sm leading-relaxed">
-            A distinguished manufacturer of a wide range of auxiliary equipment for plastic moulding machinery. 
-            Engineered for precision, built for reliability.
+            A premier manufacturer of industrial water chillers and precision thermal regulation systems. 
+            Engineered for efficiency, built for reliability.
           </p>
         </div>
 
@@ -23,13 +23,13 @@ const Footer = () => (
         <div>
           <h4 className="font-semibold mb-4 text-sm uppercase tracking-wider">Products</h4>
           <ul className="space-y-2 text-sm text-primary-foreground/70">
-            <li><Link to="/products/hot-air-dryer" className="hover:text-accent transition-colors">Hot Air Dryers</Link></li>
-            <li><Link to="/products/single-phase-hopper-loader" className="hover:text-accent transition-colors">Single Phase Hopper Loaders</Link></li>
-            <li><Link to="/products/three-phase-hopper-loader" className="hover:text-accent transition-colors">Three Phase Hopper Loaders</Link></li>
-            <li><Link to="/products/central-conveying-system" className="hover:text-accent transition-colors">Central Conveying Systems</Link></li>
-            <li><Link to="/products/mould-temperature-controller" className="hover:text-accent transition-colors">Mould Temperature Controllers</Link></li>
-            <li><Link to="/products/water-cooled-chiller" className="hover:text-accent transition-colors">Water Cooled Chillers</Link></li>
-            <li><Link to="/products/air-cooled-chiller" className="hover:text-accent transition-colors">Air Cooled Chillers</Link></li>
+            <li><Link to="/products/industrial-water-chiller" className="hover:text-accent transition-colors">Industrial Water Chillers</Link></li>
+            <li><Link to="/products/stainless-steel-water-chiller" className="hover:text-accent transition-colors">SS Water Chillers</Link></li>
+            <li><Link to="/products/water-cooled-chillers" className="hover:text-accent transition-colors">Water Cooled Chillers</Link></li>
+            <li><Link to="/products/cnc-spindle-water-chiller" className="hover:text-accent transition-colors">CNC Spindle Chillers</Link></li>
+            <li><Link to="/products/mould-temperature-controller-unit" className="hover:text-accent transition-colors">Mould Temp Controllers</Link></li>
+            <li><Link to="/products/heat-pump-water-heater" className="hover:text-accent transition-colors">Heat Pump Water Heaters</Link></li>
+            <li><Link to="/products/lab-chiller" className="hover:text-accent transition-colors">Laboratory Chillers</Link></li>
           </ul>
         </div>
 

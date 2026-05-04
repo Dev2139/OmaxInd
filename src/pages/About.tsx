@@ -4,11 +4,18 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle2, ShieldCheck, Target, Users, Globe, Zap } from "lucide-react";
 import heroImage from "@/assets/hero-industrial.jpg";
+import SEO from "@/components/SEO";
 
 const About: React.FC = () => {
   return (
     <div className="min-h-screen bg-background flex flex-col">
       <Header />
+      <SEO 
+        title="About Omax Industries | Leading Chiller Manufacturer Ahmedabad"
+        description="Learn more about Omax Industries, a premier manufacturer of industrial cooling and thermal management systems in India with over 15 years of excellence."
+        keywords="Omax Industries profile, industrial chiller history, Ahmedabad manufacturing company, thermal regulation expertise"
+        url="https://www.omaxind.com/about"
+      />
       <main className="flex-1">
         {/* Hero Section */}
         <section className="relative min-h-[350px] flex items-center justify-center">
