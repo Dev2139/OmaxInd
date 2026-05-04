@@ -449,7 +449,7 @@ export const products: Product[] = [
   },
   // --- End Mould Temperature Controller (new ninth product) ---
 
-  // --- Heat Pump Water Heater (new tenth product) ---
+  // --- Heat Pump Water Heater (new tenth product) 
   {
     slug: "heat-pump-water-heater",
     name: "Heat Pump Water Heater",
