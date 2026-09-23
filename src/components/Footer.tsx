@@ -71,9 +71,18 @@ const Footer = () => (
       </div>
     </div>
     <div className="border-t border-primary-foreground/10">
-      <div className="container py-4 flex flex-col sm:flex-row items-center justify-between text-xs text-primary-foreground/50">
+      <div className="container py-4 flex flex-col sm:flex-row items-center justify-between text-xs text-primary-foreground/60 gap-3">
         <span>© {new Date().getFullYear()} Omax Industries. All rights reserved.</span>
-        <span>Ahmedabad, India</span>
+        <a
+          href="https://devdhar.in"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Designed & Developed by Devdhara Technologies"
+          className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-foreground/10 hover:bg-accent hover:text-accent-foreground text-primary-foreground/80 transition-all text-xs font-medium border border-primary-foreground/10"
+        >
+          <span>Site Made by</span>
+          <span className="font-semibold underline underline-offset-2">Devdhara Technologies</span>
+        </a>
       </div>
     </div>
   </footer>
