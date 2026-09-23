@@ -25,7 +25,7 @@ const Contact = () => {
         title="Contact Omax Industries | Request a Quote"
         description="Get in touch with Omax Industries for custom industrial cooling solutions. Located in Kathawada GIDC, Ahmedabad. Contact us for quotes and technical support."
         keywords="contact Omax Industries, industrial chiller quote, Ahmedabad cooling solution provider, Kathawada GIDC manufacturers"
-        url="https://www.omaxind.com/contact"
+        url="https://www.omaxind.co.in/contact"
       />
       <section className="bg-primary text-primary-foreground py-16">
         <div className="container">
@@ -58,7 +58,7 @@ const Contact = () => {
                 </li>
                 <li className="flex items-center gap-3 text-sm text-muted-foreground">
                   <Globe className="w-5 h-5 text-accent shrink-0" />
-                  www.omaxind.com
+                  www.omaxind.co.in
                 </li>
               </ul>
             </div>

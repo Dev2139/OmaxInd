@@ -64,7 +64,7 @@ const Footer = () => (
             </li>
             <li className="flex items-center gap-2">
               <Globe className="w-4 h-4 shrink-0" />
-              www.omaxind.com
+              www.omaxind.co.in
             </li>
           </ul>
         </div>

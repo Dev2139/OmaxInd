@@ -28,7 +28,7 @@ const Header = () => {
             </span>
             <span className="hidden sm:inline">omaxind123@gmail.com</span>
           </div>
-          <span className="hidden md:inline">www.omaxind.com</span>
+          <span className="hidden md:inline">www.omaxind.co.in</span>
         </div>
       </div>
 

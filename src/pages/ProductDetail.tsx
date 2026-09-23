@@ -31,7 +31,7 @@ const ProductDetail = () => {
         description={product.overview}
         keywords={`${product.name}, ${product.slug.replace(/-/g, ' ')}, industrial cooling solution, Omax Industries`}
         image={product.image}
-        url={`https://www.omaxind.com/products/${product.slug}`}
+        url={`https://www.omaxind.co.in/products/${product.slug}`}
         type="product"
       />
 

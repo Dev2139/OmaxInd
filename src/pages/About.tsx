@@ -14,7 +14,7 @@ const About: React.FC = () => {
         title="About Omax Industries | Leading Chiller Manufacturer Ahmedabad"
         description="Learn more about Omax Industries, a premier manufacturer of industrial cooling and thermal management systems in India with over 15 years of excellence."
         keywords="Omax Industries profile, industrial chiller history, Ahmedabad manufacturing company, thermal regulation expertise"
-        url="https://www.omaxind.com/about"
+        url="https://www.omaxind.co.in/about"
       />
       <main className="flex-1">
         {/* Hero Section */}
