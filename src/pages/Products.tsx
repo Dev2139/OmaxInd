@@ -10,16 +10,21 @@ const Products = () => (
   <div className="min-h-screen bg-background">
     <Header />
     <SEO 
-      title="Industrial Chiller Range | Omax Industries Ahmedabad"
-      description="Explore our range of industrial water chillers, CNC spindle chillers, and laboratory cooling solutions. Engineered for efficiency and reliability."
-      keywords="industrial water chiller range, SS water chiller, CNC spindle chiller products, laboratory chillers Ahmedabad"
+      title="Industrial Chiller & Thermal Equipment Range | Omax Industries Ahmedabad"
+      description="Explore Omax Industries' full catalog of industrial water chillers, SS water chillers, CNC spindle chillers, mould temperature controllers, and heat pumps in Ahmedabad, India."
+      keywords="industrial water chiller catalog, SS water chiller manufacturer, CNC spindle chiller products, mould temperature controller price, lab chiller manufacturer Ahmedabad, Kathawada GIDC cooling equipment"
+      url="https://www.omaxind.co.in/products"
+      breadcrumbs={[
+        { name: "Home", url: "/" },
+        { name: "Products", url: "/products" }
+      ]}
     />
     <section className="bg-primary text-primary-foreground py-16">
       <div className="container">
         <p className="text-accent font-semibold text-sm uppercase tracking-widest mb-3">Our Range</p>
-        <h1 className="text-3xl md:text-4xl font-bold">Industrial Chiller & Thermal Solutions</h1>
+        <h1 className="text-3xl md:text-4xl font-bold">Industrial Chiller & Thermal Solutions Range</h1>
         <p className="text-primary-foreground/70 mt-4 max-w-2xl">
-          Comprehensive range of water chillers, CNC spindle chillers, and precision temperature controllers designed for industrial reliability.
+          Comprehensive catalog of high-efficiency water chillers, CNC spindle chillers, and precision temperature controllers engineered in Kathawada GIDC, Ahmedabad.
         </p>
       </div>
     </section>
@@ -30,7 +35,7 @@ const Products = () => (
             <div className="aspect-[4/3] bg-muted overflow-hidden flex items-center justify-center">
               <img
                 src={p.image}
-                alt={p.name}
+                alt={`${p.name} - Industrial Thermal Regulation System Omax Industries`}
                 loading="lazy"
                 style={{ maxWidth: '70%', maxHeight: '70%' }}
                 className="object-contain group-hover:scale-105 transition-transform duration-500"

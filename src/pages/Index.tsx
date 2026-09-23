@@ -42,19 +42,47 @@ const industries = [
   { icon: Zap, name: "Plastic Processing Plants" },
 ];
 
+const indexFAQs = [
+  {
+    question: "What types of industrial chillers does Omax Industries manufacture?",
+    answer: "Omax Industries manufactures Stainless Steel Water Chillers, Industrial Water Cooled & Air Cooled Chillers, CNC Spindle Chillers, Mould Temperature Controllers, and Heat Pump Water Heaters tailored for heavy industrial usage."
+  },
+  {
+    question: "Where is Omax Industries located in India?",
+    answer: "Omax Industries is located at Plot 10, Harikrupa Industrial Park-2, Road No.5, Kathawada G.I.D.C., Kathawada, Ahmedabad, Gujarat - 382430, India."
+  },
+  {
+    question: "Do you manufacture custom capacity chillers and temperature controllers?",
+    answer: "Yes, Omax Industries provides fully customized thermal regulation and chiller capacities (from 1 TR to 50+ TR) with options for PLC microcontrollers, SS304/SS316 tanks, and heavy-duty pumps."
+  },
+  {
+    question: "Which industries rely on Omax cooling equipment?",
+    answer: "Our industrial cooling equipment is widely used in Injection Molding, Blow Molding, CNC Machine Spindle Cooling, Laser Engraving, Chemical Processing, Pharmaceutical Plants, and Food & Beverage Processing."
+  }
+];
+
 const Index = () => (
   <div className="min-h-screen bg-background">
     <Header />
     <SEO 
-      title="Omax Industries | Industrial Chiller & Thermal Solutions Ahmedabad"
-      description="Omax Industries is India's leading manufacturer of high-efficiency industrial water chillers, CNC spindle chillers, and precision thermal regulation systems. Based in Ahmedabad."
-      keywords="industrial chiller manufacturer, water cooled chiller India, CNC spindle chiller, mould temperature controller, industrial cooling systems Ahmedabad"
+      title="Omax Industries | Industrial Chiller Manufacturer Ahmedabad India"
+      description="Premier manufacturer of high-efficiency industrial water chillers, CNC spindle chillers, mould temperature controllers, and commercial heat pumps in Kathawada GIDC, Ahmedabad, India."
+      keywords="industrial chiller manufacturer, water cooled chiller India, air cooled chiller Ahmedabad, CNC spindle chiller, mould temperature controller, heat pump water heater, Omax Industries Kathawada, industrial cooling solutions Ahmedabad"
+      url="https://www.omaxind.co.in"
+      faqs={indexFAQs}
+      breadcrumbs={[{ name: "Home", url: "/" }]}
     />
 
     {/* Hero */}
     <section className="relative min-h-[600px] flex items-center">
       <div className="absolute inset-0">
-        <img src={heroImage} alt="Industrial manufacturing facility" className="w-full h-full object-cover" width={1920} height={1080} />
+        <img 
+          src={heroImage} 
+          alt="Omax Industries Industrial Water Chiller Manufacturing Facility Ahmedabad India" 
+          className="w-full h-full object-cover" 
+          width={1920} 
+          height={1080} 
+        />
         <div className="absolute inset-0 bg-primary/80" />
       </div>
       <div className="container relative z-10 py-24">
@@ -123,7 +151,14 @@ const Index = () => (
           {products.map((p) => (
             <div key={p.slug} className="bg-card rounded-lg border border-border overflow-hidden group hover:shadow-lg transition-shadow">
               <div className="aspect-[4/3] bg-muted overflow-hidden">
-                <img src={p.image} alt={p.name} loading="lazy" width={800} height={800} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <img 
+                  src={p.image} 
+                  alt={`${p.name} - Industrial Water Chiller Solution by Omax Industries Ahmedabad`} 
+                  loading="lazy" 
+                  width={800} 
+                  height={800} 
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-foreground mb-2">{p.name}</h3>

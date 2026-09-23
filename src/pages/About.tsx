@@ -11,16 +11,20 @@ const About: React.FC = () => {
     <div className="min-h-screen bg-background flex flex-col">
       <Header />
       <SEO 
-        title="About Omax Industries | Leading Chiller Manufacturer Ahmedabad"
-        description="Learn more about Omax Industries, a premier manufacturer of industrial cooling and thermal management systems in India with over 15 years of excellence."
-        keywords="Omax Industries profile, industrial chiller history, Ahmedabad manufacturing company, thermal regulation expertise"
+        title="About Omax Industries | Leading Industrial Chiller Manufacturer Ahmedabad"
+        description="Learn about Omax Industries, India's premier manufacturer of industrial water chillers, CNC spindle chillers, and thermal management systems based in Kathawada GIDC, Ahmedabad."
+        keywords="Omax Industries profile, industrial chiller manufacturer profile, Kathawada GIDC manufacturing company, thermal regulation engineering team"
         url="https://www.omaxind.co.in/about"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "About Us", url: "/about" }
+        ]}
       />
       <main className="flex-1">
         {/* Hero Section */}
         <section className="relative min-h-[350px] flex items-center justify-center">
           <div className="absolute inset-0">
-            <img src={heroImage} alt="About Omax Industries" className="w-full h-full object-cover" />
+            <img src={heroImage} alt="Omax Industries Industrial Manufacturing Facility Kathawada GIDC Ahmedabad" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-primary/85" />
           </div>
           <div className="container relative z-10 py-16 text-center">

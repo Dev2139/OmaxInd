@@ -1,11 +1,12 @@
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SEO from "@/components/SEO";
 
 const solutions = [
   {
-    title: "Digital Transformation",
-    desc: "Empower your business with the latest digital tools and strategies to drive efficiency and innovation.",
+    title: "Precision Thermal Regulation",
+    desc: "Empower your production with closed-loop industrial water chillers and PID mould temperature control.",
     icon: (
       <div className="bg-blue-100 text-blue-600 rounded-full p-3 mb-4">
         <svg className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M13 16h-1v-4h-1m4 4h-1v-4h-1m-4 4h-1v-4h-1m4 4h-1v-4h-1"/></svg>
@@ -13,8 +14,8 @@ const solutions = [
     ),
   },
   {
-    title: "Cloud Solutions",
-    desc: "Leverage scalable and secure cloud platforms to enhance collaboration and reduce IT costs.",
+    title: "Heavy-Duty Process Cooling",
+    desc: "Scalable water-cooled and air-cooled chillers for continuous high-load plastic molding and CNC machining.",
     icon: (
       <div className="bg-green-100 text-green-600 rounded-full p-3 mb-4">
         <svg className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
@@ -22,8 +23,8 @@ const solutions = [
     ),
   },
   {
-    title: "AI & Automation",
-    desc: "Automate repetitive tasks and gain insights with AI-driven analytics and intelligent automation solutions.",
+    title: "Energy Recovery & Heat Pumps",
+    desc: "Commercial heat pump water heaters for energy-efficient water heating in manufacturing plants.",
     icon: (
       <div className="bg-yellow-100 text-yellow-600 rounded-full p-3 mb-4">
         <svg className="w-8 h-8" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M9.75 17L9 21m6-4l.75 4M4.21 4.21a1 1 0 011.42 0l14.16 14.16a1 1 0 01-1.42 1.42L4.21 5.63a1 1 0 010-1.42z"/></svg>
@@ -32,32 +33,41 @@ const solutions = [
   },
 ];
 
-
 import { Button } from "@/components/ui/button";
-import { ArrowRight, CheckCircle2, Zap, Cpu, Shield } from "lucide-react";
+import { ArrowRight, Zap, Cpu, Shield } from "lucide-react";
 import heroImage from "@/assets/hero-industrial.jpg";
 
 const features = [
-  { icon: <Shield className="w-7 h-7 text-accent" />, title: "Secure & Reliable", desc: "Enterprise-grade security and robust infrastructure for peace of mind." },
-  { icon: <Cpu className="w-7 h-7 text-accent" />, title: "Smart Automation", desc: "Automate processes and reduce manual effort with intelligent solutions." },
-  { icon: <Zap className="w-7 h-7 text-accent" />, title: "Fast Deployment", desc: "Rapid implementation so you can start seeing results quickly." },
+  { icon: <Shield className="w-7 h-7 text-accent" />, title: "Secure & Reliable", desc: "Enterprise-grade component quality with SS304/SS316 reservoirs for 24/7 industrial runtime." },
+  { icon: <Cpu className="w-7 h-7 text-accent" />, title: "Smart Micro-Control", desc: "Digital PID and PLC automation with real-time temperature diagnostics and alarms." },
+  { icon: <Zap className="w-7 h-7 text-accent" />, title: "Fast System Turnkey", desc: "Custom engineered, rapid installation and technical commissioning across India." },
 ];
 
 const steps = [
-  { title: "Consultation", desc: "We analyze your business needs and recommend the best-fit solutions." },
-  { title: "Implementation", desc: "Our team sets up and customizes the solution for your workflow." },
-  { title: "Support", desc: "Ongoing support and optimization to ensure your continued success." },
+  { title: "Consultation & Sizing", desc: "We analyze your heat load requirements and calculate exact TR capacity needs." },
+  { title: "Custom Engineering", desc: "Our engineers build and configure the chiller system to your production specifications." },
+  { title: "Commissioning & Support", desc: "On-site installation, testing, and dedicated lifetime technical assistance." },
 ];
 
 const Solutions: React.FC = () => {
   return (
     <div className="min-h-screen bg-background flex flex-col">
       <Header />
+      <SEO 
+        title="Custom Industrial Cooling & Thermal Solutions | Omax Industries"
+        description="Omax Industries provides turnkey thermal management solutions, custom industrial water chillers, and spindle cooling systems engineered for plastic, CNC, and chemical industries."
+        keywords="industrial cooling solutions, custom chiller engineering, thermal regulation system Ahmedabad, process cooling solutions Kathawada GIDC"
+        url="https://www.omaxind.co.in/solutions"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Solutions", url: "/solutions" }
+        ]}
+      />
       <main className="flex-1">
         {/* Hero Section */}
         <section className="relative min-h-[350px] flex items-center justify-center">
           <div className="absolute inset-0">
-            <img src={heroImage} alt="Solutions" className="w-full h-full object-cover" />
+            <img src={heroImage} alt="Omax Industries Industrial Cooling Solutions Ahmedabad" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-primary/80" />
           </div>
           <div className="container relative z-10 py-16 text-center">

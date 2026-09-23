@@ -27,12 +27,24 @@ const ProductDetail = () => {
     <div className="min-h-screen bg-background">
       <Header />
       <SEO 
-        title={`${product.name} | Industrial Thermal Solutions`}
-        description={product.overview}
-        keywords={`${product.name}, ${product.slug.replace(/-/g, ' ')}, industrial cooling solution, Omax Industries`}
+        title={`${product.name} Manufacturer in Ahmedabad India | Omax Industries`}
+        description={`${product.name} manufactured by Omax Industries in Kathawada GIDC, Ahmedabad. ${product.overview.slice(0, 140)}...`}
+        keywords={`${product.name}, ${product.name} manufacturer Ahmedabad, ${product.slug.replace(/-/g, ' ')} price India, industrial cooling solution Kathawada, Omax Industries`}
         image={product.image}
         url={`https://www.omaxind.co.in/products/${product.slug}`}
         type="product"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Products", url: "/products" },
+          { name: product.name, url: `/products/${product.slug}` }
+        ]}
+        productSchema={{
+          name: product.name,
+          description: product.overview,
+          image: product.image,
+          sku: product.slug,
+          category: "Industrial Water Chillers & Thermal Systems"
+        }}
       />
 
       {/* Breadcrumb */}
@@ -50,7 +62,7 @@ const ProductDetail = () => {
       <section className="container py-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="bg-muted rounded-lg overflow-hidden">
-            <img src={product.image} alt={product.name} width={800} height={800} className="w-full h-full object-cover" />
+            <img src={product.image} alt={`${product.name} Manufactured by Omax Industries Kathawada Ahmedabad`} width={800} height={800} className="w-full h-full object-cover" />
           </div>
           <div>
             <p className="text-accent font-semibold text-sm uppercase tracking-widest mb-2">Product Overview</p>

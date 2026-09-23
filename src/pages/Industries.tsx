@@ -62,15 +62,27 @@ const industries = [
   },
 ];
 
+import SEO from "@/components/SEO";
+
 const Industries: React.FC = () => {
   return (
     <div className="min-h-screen bg-background flex flex-col">
       <Header />
+      <SEO 
+        title="Industries Served | Omax Industries Thermal Cooling Systems"
+        description="Omax Industries designs specialized industrial chillers for Plastic Injection Molding, CNC Spindle Cooling, Pharma, Chemical, Food & Beverage, and Commercial sectors."
+        keywords="plastic injection chiller, CNC spindle cooling system, pharma process chiller, chemical plant chiller, commercial heat pump Ahmedabad"
+        url="https://www.omaxind.co.in/industries"
+        breadcrumbs={[
+          { name: "Home", url: "/" },
+          { name: "Industries", url: "/industries" }
+        ]}
+      />
       <main className="flex-1">
         {/* Hero Section */}
         <section className="relative min-h-[350px] flex items-center justify-center">
           <div className="absolute inset-0">
-            <img src={heroImage} alt="Industries We Serve" className="w-full h-full object-cover" />
+            <img src={heroImage} alt="Industries Served by Omax Chillers Ahmedabad" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-primary/85" />
           </div>
           <div className="container relative z-10 py-16 text-center">
